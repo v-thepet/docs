@@ -23,7 +23,7 @@ Allows this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iass
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Finalize ();  
 ```  
   
@@ -35,4 +35,5 @@ HRESULT Finalize ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

@@ -10,14 +10,14 @@ Gets the assembly's public key.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKey(  
    [in] ULONG32 cbPublicKey,   
    [out] ULONG32 *pcbPublicKey,   
    [out, size_is(cbPublicKey), length_is(*pcbPublicKey)] BYTE pbPublicKey[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbPublicKey`  
  [in] The maximum number of bytes in the `pbPublicKey` array.  
   
@@ -42,5 +42,6 @@ HRESULT GetPublicKey(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

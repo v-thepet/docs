@@ -23,14 +23,14 @@ Maps a managed code instruction pointer to the JIT-recompiled version of a funct
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromIP2(  
     [in]  LPCBYTE    ip,  
     [out] FunctionID *pFunctionId,  
     [out] ReJITID *pReJitId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ip`  
  [in] The instruction pointer in managed code.  
   
@@ -56,4 +56,5 @@ HRESULT GetFunctionFromIP2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

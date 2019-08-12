@@ -24,7 +24,7 @@ Determines the class in which a method is declared.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodOrigin (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -73,4 +73,5 @@ The `pstrClassName` parameter must not point to a valid `BSTR` before the functi
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

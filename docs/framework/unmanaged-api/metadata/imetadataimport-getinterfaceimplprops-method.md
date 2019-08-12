@@ -23,7 +23,7 @@ Gets a pointer to the metadata tokens for the <xref:System.Type> that implements
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInterfaceImplProps (  
    [in]  mdInterfaceImpl        iiImpl,  
    [out] mdTypeDef              *pClass,  
@@ -31,7 +31,7 @@ HRESULT GetInterfaceImplProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iiImpl`  
  [in] The metadata token representing the method to return the class and interface tokens for.  
   
@@ -79,5 +79,6 @@ Recall, the token is a 4-byte value:
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

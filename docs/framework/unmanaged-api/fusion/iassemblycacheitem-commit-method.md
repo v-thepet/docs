@@ -23,14 +23,14 @@ Commits the cached assembly reference to memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Commit (  
     [in] DWORD dwFlags,   
     [out, optional] ULONG *pulDisposition  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] Flags defined in Fusion.idl.  
   
@@ -45,4 +45,5 @@ HRESULT Commit (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)

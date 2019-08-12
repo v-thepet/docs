@@ -28,13 +28,13 @@ Frees memory that was allocated with a previous call to a strong name function s
   
 ## Syntax  
   
-```  
+```cpp  
 VOID StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbMemory`  
  [in] A pointer to the memory to free.  
   
@@ -48,5 +48,6 @@ VOID StrongNameFreeBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [StrongNameFreeBuffer Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

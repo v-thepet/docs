@@ -10,7 +10,7 @@ Returns information about a type's properties, such as the number of signature o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeProps(  
    [in]  ULONG32 vtableRva,  
    [in]  ULONG32 cbSignature,  
@@ -19,7 +19,7 @@ HRESULT GetTypeProps(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tableRva`  
  [in] A relative virtual address (RVA) in a vtable.  
   
@@ -48,6 +48,7 @@ HRESULT GetTypeProps(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [GetMethodProps Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getmethodprops-method.md)
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

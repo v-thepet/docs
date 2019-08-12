@@ -23,7 +23,7 @@ Represents a single chunk of code in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _CodeChunkInfo {  
     CORDB_ADDRESS startAddr;  
     ULONG32       length;  
@@ -50,6 +50,7 @@ typedef struct _CodeChunkInfo {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

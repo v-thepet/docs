@@ -15,7 +15,7 @@ Specifies a link that appears in the See Also section.
 <seealso cref="member"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  `member`  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").  
   
@@ -30,4 +30,5 @@ Specifies a link that appears in the See Also section.
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

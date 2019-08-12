@@ -26,7 +26,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRegisters (  
     [in] ULONG64   mask,  
     [in] ULONG32   regCount,  
@@ -44,5 +44,6 @@ HRESULT SetRegisters (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
+
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

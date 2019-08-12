@@ -28,18 +28,18 @@ The following sections answer some common issues that you might encounter when y
   
  The exact details of connection usage depend on the following:  
   
--   Connection status if the <xref:System.Data.Linq.DataContext> is constructed with a connection object.  
+- Connection status if the <xref:System.Data.Linq.DataContext> is constructed with a connection object.  
   
--   Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md).  
+- Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md).  
   
 ## Updating Without Querying  
  Q. Can I update table data without first querying the database?  
   
  A. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not have set-based update commands, you can use either of the following techniques to update without first querying:  
   
--   Use <xref:System.Data.Linq.DataContext.ExecuteCommand%2A> to send SQL code.  
+- Use <xref:System.Data.Linq.DataContext.ExecuteCommand%2A> to send SQL code.  
   
--   Create a new instance of the object and initialize all the current values (fields) that affect the update. Then attach the object to the <xref:System.Data.Linq.DataContext> by using <xref:System.Data.Linq.Table%601.Attach%2A> and modify the field you want to change.  
+- Create a new instance of the object and initialize all the current values (fields) that affect the update. Then attach the object to the <xref:System.Data.Linq.DataContext> by using <xref:System.Data.Linq.Table%601.Attach%2A> and modify the field you want to change.  
   
 ## Unexpected Query Results  
  Q. My query is returning unexpected results. How can I inspect what is occurring?  
@@ -47,13 +47,13 @@ The following sections answer some common issues that you might encounter when y
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides several tools for inspecting the SQL code it generates. One of the most important is <xref:System.Data.Linq.DataContext.Log%2A>. For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).  
   
 ## Unexpected Stored Procedure Results  
- Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] surface, the return value is not correct.  
+ Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the O/R Designer surface, the return value is not correct.  
   
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides two ways to return database-generated values by way of stored procedures:  
   
--   By naming the output result.  
+- By naming the output result.  
   
--   By explicitly specifying an output parameter.  
+- By explicitly specifying an output parameter.  
   
  The following is an example of incorrect output. Because [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] cannot map the results, it always returns 0:  
   
@@ -101,7 +101,7 @@ The following sections answer some common issues that you might encounter when y
 ## Multiple DBML Files  
  Q. When I have multiple DBML files that share some tables in common, I get a compiler error.  
   
- A. Set the **Context Namespace** and **Entity Namespace** properties from the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to a distinct value for each DBML file. This approach eliminates the name/namespace collision.  
+ A. Set the **Context Namespace** and **Entity Namespace** properties from the Object Relational Designer to a distinct value for each DBML file. This approach eliminates the name/namespace collision.  
   
 ## Avoiding Explicit Setting of Database-Generated Values on Insert or Update  
  Q. I have a database table with a `DateCreated` column that defaults to SQL `Getdate()`. When I try to insert a new record by using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the value gets set to `NULL`. I would expect it to be set to the database default.  
@@ -126,19 +126,19 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ```  
   
 ## Errors Using SQL Compact 3.5  
- Q. I get an error when I drag tables out of a [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] database.  
+ Q. I get an error when I drag tables out of a SQL Server Compact 3.5 database.  
   
- A. The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)], although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
+ A. The Object Relational Designer does not support SQL Server Compact 3.5, although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
   
 ## Errors in Inheritance Relationships  
- Q. I used the toolbox inheritance shape in the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to connect two entities, but I get errors.  
+ Q. I used the toolbox inheritance shape in the Object Relational Designer to connect two entities, but I get errors.  
   
  A. Creating the relationship is not enough. You must provide information such as the discriminator column, base class discriminator value, and derived class discriminator value.  
   
 ## Provider Model  
  Q. Is a public provider model available?  
   
- A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
+ A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and SQL Server Compact 3.5 only.  
   
 ## SQL-Injection Attacks  
  Q. How is [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] protected from SQL-injection attacks?  
@@ -150,19 +150,19 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
  A. Take the following steps for this advanced scenario:  
   
-1.  In the .dbml file, modify the property by changing the <xref:System.Data.Linq.ITable.IsReadOnly%2A> flag to `True`.  
+1. In the .dbml file, modify the property by changing the <xref:System.Data.Linq.ITable.IsReadOnly%2A> flag to `True`.  
   
-2.  Add a partial class. Create a constructor with parameters for the read-only members.  
+2. Add a partial class. Create a constructor with parameters for the read-only members.  
   
-3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
+3. Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
-    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in Visual Studio, your changes might be overwritten.  
+    >  If you are using the Object Relational Designer in Visual Studio, your changes might be overwritten.  
   
 ## APTCA  
  Q. Is System.Data.Linq marked for use by partially trusted code?  
   
- A. Yes, the System.Data.Linq.dll assembly is among those [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Without this marking, assemblies in the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] are intended for use only by fully trusted code.  
+ A. Yes, the System.Data.Linq.dll assembly is among those .NET Framework assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Without this marking, assemblies in the .NET Framework are intended for use only by fully trusted code.  
   
  The principal scenario in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] for allowing partially trusted callers is to enable the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] assembly to be accessed from Web applications, where the *trust* configuration is Medium.  
   
@@ -179,7 +179,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
  A. Do not try to reuse instances of <xref:System.Data.Linq.DataContext>. Each <xref:System.Data.Linq.DataContext> maintains state (including an identity cache) for one particular edit/query session. To obtain new instances based on the current state of the database, use a new <xref:System.Data.Linq.DataContext>.  
   
- You can still use underlying [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
+ You can still use underlying ADO.NET connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
   
 ## Second DataContext Is Not Updated  
  Q. I used one instance of <xref:System.Data.Linq.DataContext> to store values in the database. However, a second <xref:System.Data.Linq.DataContext> on the same database does not reflect the updated values. The second <xref:System.Data.Linq.DataContext> instance seems to return cached values.  
@@ -194,6 +194,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
  A. Read-only mode turns off the ability of the context to track changes.  
   
 ## See also
+
 - [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
 - [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)
 - [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)

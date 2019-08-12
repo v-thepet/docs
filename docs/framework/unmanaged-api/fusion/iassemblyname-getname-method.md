@@ -23,14 +23,14 @@ Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyN
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in, out] LPDWORD lpcwBuffer,  
     [out]     WCHAR *pwzName  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpcwBuffer`  
  [in, out] The size of `pwzName` in wide characters, including the null terminator character.  
   
@@ -45,4 +45,5 @@ HRESULT GetName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

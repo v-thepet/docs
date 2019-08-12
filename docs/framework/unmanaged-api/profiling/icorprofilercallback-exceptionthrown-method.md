@@ -26,12 +26,12 @@ Notifies the profiler that an exception has been thrown.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionThrown(  
     [in] ObjectID thrownObjectId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `thrownObjectId`  
  [in] The ID of the object that caused the exception to be thrown.  
   
@@ -50,4 +50,5 @@ HRESULT ExceptionThrown(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

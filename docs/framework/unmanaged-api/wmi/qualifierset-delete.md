@@ -24,7 +24,7 @@ Deletes a specified qualifier by name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Delete (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 
@@ -69,4 +69,5 @@ Due to qualifier propagation rules, a particular qualifier may have been inherit
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

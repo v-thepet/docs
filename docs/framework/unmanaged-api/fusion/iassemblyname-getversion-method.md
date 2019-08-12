@@ -23,14 +23,14 @@ Gets the version information for the assembly referenced by this [IAssemblyName]
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersion (  
     [out] LPDWORD pdwVersionHi,  
     [out] LPDWORD pdwVersionLow  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwVersionHi`  
  [out] The high 32 bits of the version.  
   
@@ -45,4 +45,5 @@ HRESULT GetVersion (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

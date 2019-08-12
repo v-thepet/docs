@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, control patterns for clients"
   - "control patterns, UI Automation clients"
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Control Patterns for Clients
 > [!NOTE]
@@ -32,7 +30,7 @@ ms.author: "mhopkins"
 ## Retrieving Properties on Control Patterns  
  Clients can retrieve the property values on control patterns by calling either <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> or <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> and casting the object returned to an appropriate type. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md).  
   
- In addition to the `GetPropertyValue` methods, property values can be retrieved through the [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] accessors to access the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties on a pattern.  
+ In addition to the `GetPropertyValue` methods, property values can be retrieved through the common language runtime (CLR) accessors to access the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties on a pattern.  
   
 <a name="uiautomation_with_variable_patterns"></a>   
 ## Controls with Variable Patterns  
@@ -41,6 +39,7 @@ ms.author: "mhopkins"
  Controls implementing custom control types can have any set of control patterns that are needed to represent their functionality.  
   
 ## See also
+
 - [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)
 - [UI Automation Text Pattern](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)
 - [Invoke a Control Using UI Automation](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)

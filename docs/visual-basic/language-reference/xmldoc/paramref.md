@@ -15,7 +15,7 @@ Formats a word as a parameter.
 <paramref name="name"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the parameter to refer to. Enclose the name in double quotation marks (" ").  
   
@@ -30,4 +30,5 @@ Formats a word as a parameter.
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

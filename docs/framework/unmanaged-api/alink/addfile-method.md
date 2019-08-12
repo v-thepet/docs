@@ -23,7 +23,7 @@ Adds files to the assembly. Can also be used to create unbound modules.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddFile(  
     mdAssembly      AssemblyID,  
     LPCWSTR         pszFilename,  
@@ -33,7 +33,7 @@ HRESULT AddFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of the assembly to be augmented.  
   
@@ -56,6 +56,7 @@ HRESULT AddFile(
  Requires alink.h.  
   
 ## See also
+
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

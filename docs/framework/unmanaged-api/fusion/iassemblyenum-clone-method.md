@@ -23,13 +23,13 @@ Creates a shallow copy of this [IAssemblyEnum](../../../../docs/framework/unmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] IAssemblyEnum   **ppEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the copy.  
   
@@ -41,4 +41,5 @@ HRESULT Clone (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)

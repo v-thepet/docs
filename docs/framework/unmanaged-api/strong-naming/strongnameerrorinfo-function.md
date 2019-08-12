@@ -28,7 +28,7 @@ Gets the last error code that was raised by one of the strong name functions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameErrorInfo ();   
 ```  
   
@@ -46,4 +46,3 @@ HRESULT StrongNameErrorInfo ();
  **Library:** Included as a resource in MsCorEE.dll  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  

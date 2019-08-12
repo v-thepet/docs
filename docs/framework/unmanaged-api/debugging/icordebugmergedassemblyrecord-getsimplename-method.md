@@ -10,7 +10,7 @@ Gets the simple name of the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSimpleName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
@@ -18,7 +18,7 @@ HRESULT GetSimpleName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   
@@ -44,5 +44,6 @@ HRESULT GetSimpleName(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

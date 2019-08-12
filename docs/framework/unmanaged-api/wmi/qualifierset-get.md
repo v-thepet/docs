@@ -24,7 +24,7 @@ Gets the specified named qualifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Get (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 
@@ -77,4 +77,5 @@ This function wraps a call to the [IWbemQualifierSet::Get](/windows/desktop/api/
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

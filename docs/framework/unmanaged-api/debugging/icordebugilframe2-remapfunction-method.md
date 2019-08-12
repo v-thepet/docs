@@ -23,13 +23,13 @@ Remaps an edited function by specifying the new Microsoft intermediate language 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemapFunction (  
     [in] ULONG32      newILOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `newILOffset`  
  [in] The stack frame's new MSIL offset at which the instruction pointer should be placed. This value must be a sequence point.  
   
@@ -43,9 +43,9 @@ HRESULT RemapFunction (
   
  The `RemapFunction` method can be called only in the context of the current frame, and only in one of the following cases:  
   
--   After receipt of a [ICorDebugManagedCallback2::FunctionRemapOpportunity](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-functionremapopportunity-method.md) callback that has not yet been continued.  
+- After receipt of a [ICorDebugManagedCallback2::FunctionRemapOpportunity](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-functionremapopportunity-method.md) callback that has not yet been continued.  
   
--   While code execution is stopped because of an [ICorDebugManagedCallback::EditAndContinueRemap](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-editandcontinueremap-method.md) event for this frame.  
+- While code execution is stopped because of an [ICorDebugManagedCallback::EditAndContinueRemap](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-editandcontinueremap-method.md) event for this frame.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

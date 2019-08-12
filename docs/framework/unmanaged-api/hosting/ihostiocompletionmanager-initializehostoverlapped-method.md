@@ -23,13 +23,13 @@ Provides the host with an opportunity to initialize any custom data to append to
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeHostOverlapped (  
     [in] void* pvOverlapped  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvOverlapped`  
  [in] A pointer to the Win32 `OVERLAPPED` structure to be included with the I/O request.  
   
@@ -63,6 +63,7 @@ HRESULT InitializeHostOverlapped (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [GetHostOverlappedSize Method](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-gethostoverlappedsize-method.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

@@ -10,7 +10,7 @@ Creates a new stack unwinder that starts unwinding from an initial context (whic
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  
@@ -20,7 +20,7 @@ HRESULT CreateVirtualUnwinder(
 };  
 ```  
   
-#### Parameters  
+## Parameters  
  nativeThreadID  
  [in] The native thread ID of the thread whose stack is to be unwound.  
   
@@ -54,5 +54,6 @@ HRESULT CreateVirtualUnwinder(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

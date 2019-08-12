@@ -23,14 +23,14 @@ Gets a reference pointer to the specified managed object that has a garbage coll
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferenceValueFromGCHandle (  
     [in]  UINT_PTR                 handle,  
     [out] ICorDebugReferenceValue  **pOutValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `handle`  
  [in] A pointer to a managed object that has a garbage collection handle. This value is a <xref:System.IntPtr> object and can be retrieved from the <xref:System.Runtime.InteropServices.GCHandle> for the managed object.  
   

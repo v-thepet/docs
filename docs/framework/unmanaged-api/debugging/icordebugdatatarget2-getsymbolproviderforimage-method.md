@@ -10,14 +10,14 @@ Returns the symbol-provider for a module from the base address of that module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolProviderForImage(  
     [in] CORDB_ADDRESS imageBaseAddress,   
     [out] ICorDebugSymbolProvider **ppSymProvider  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imageBaseAddress`  
  [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the base address of a module.  
   
@@ -39,5 +39,6 @@ HRESULT GetSymbolProviderForImage(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

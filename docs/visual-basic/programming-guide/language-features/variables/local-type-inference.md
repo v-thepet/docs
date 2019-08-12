@@ -59,13 +59,14 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  `Option Infer Off`  
   
- If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)] or earlier, the compiler default is `Option Infer Off`.  
+ If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. 
   
  If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.  
   
  For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## See also
+
 - [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 - [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
 - [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)

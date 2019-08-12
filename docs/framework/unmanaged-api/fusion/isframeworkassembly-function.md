@@ -22,7 +22,7 @@ Gets a value that indicates whether the specified assembly is managed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsFrameworkAssembly (  
     [in]  LPCWSTR pwzAssemblyReference,  
     [out] LPBOOL  pbIsFrameworkAssembly,  
@@ -31,7 +31,7 @@ HRESULT IsFrameworkAssembly (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyReference`  
  [in] The name of the assembly to check.  
   
@@ -55,4 +55,5 @@ HRESULT IsFrameworkAssembly (
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

@@ -23,13 +23,13 @@ Performs a cooperative stop on all threads that are running managed code in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop (  
     [in] DWORD dwTimeoutIgnored  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwTimeoutIgnored`  
  Not used.  
   
@@ -51,4 +51,3 @@ HRESULT Stop (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

@@ -23,7 +23,7 @@ Gets the extents of native code associated with the JIT-recompiled version of th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo3(  
     [in]  FunctionID functionID,  
     [in]  ReJITID reJitId,  
@@ -33,7 +33,7 @@ HRESULT GetCodeInfo3(
     COR_PRF_CODE_INFO codeInfos[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionID`  
  [in] The ID of the function with which the native code is associated.  
   
@@ -71,6 +71,7 @@ HRESULT GetCodeInfo3(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [GetCodeInfo2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getcodeinfo2-method.md)
 - [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

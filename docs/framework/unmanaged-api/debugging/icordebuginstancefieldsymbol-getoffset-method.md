@@ -10,13 +10,13 @@ Gets the offset in bytes of this instance field in its parent class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset(  
    [out] ULONG32 *pcbOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbOffset`  
  A pointer to the number of bytes that this instance field is offset in its parent class.  
   
@@ -35,5 +35,6 @@ HRESULT GetOffset(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugInstanceFieldSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

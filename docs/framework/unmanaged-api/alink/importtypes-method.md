@@ -22,7 +22,7 @@ Initiates the importing of types from each scope imported via [ImportFile Method
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportTypes(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  
@@ -33,7 +33,7 @@ HRESULT ImportTypes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly to import to.  
   
@@ -59,6 +59,7 @@ HRESULT ImportTypes(
  Requires alink.h  
   
 ## See also
+
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

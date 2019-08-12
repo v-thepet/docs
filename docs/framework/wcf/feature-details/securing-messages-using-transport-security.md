@@ -19,11 +19,11 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  Transport security using <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> impacts how MSMQ messages are secured in-transit between the transmission queue and the target queue where secured implies:  
   
--   Signing the message to ensure it is not tampered with.  
+- Signing the message to ensure it is not tampered with.  
   
--   Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
+- Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
   
--   The target queue manager that identifies the sender of the message for non-repudiation.  
+- The target queue manager that identifies the sender of the message for non-repudiation.  
   
  In MSMQ, independent of authentication, the target queue has an access control list (ACL) to check whether the client has permission to send the message to the target queue. The receiving application is also checked for permission to receive the message from the target queue.  
   
@@ -88,9 +88,12 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
 ### MSMQ Hash Algorithm  
  The hash algorithm specifies the algorithm used to create a digital signature of the MSMQ message. The receiving queue manager uses this same algorithm to authenticate the MSMQ message. This property is used only if <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> is set to <xref:System.Net.Security.ProtectionLevel.Sign> or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.  
+ The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.
+
+ Due to collision problems with MD5/SHA1, Microsoft recommends SHA256 or better.
   
 ## See also
+
 - [Queues Overview](queues-overview.md)
 - [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
 - [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

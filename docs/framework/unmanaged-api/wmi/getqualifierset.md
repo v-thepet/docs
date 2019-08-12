@@ -24,7 +24,7 @@ Retrieves the qualifier set for a class instance or a class definition.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetQualifierSet (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -69,4 +69,5 @@ The [IWbemQualifierSet pointer](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqua
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

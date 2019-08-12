@@ -24,7 +24,7 @@ Retrieves the next method in an enumeration that begins with a call to [BeginMet
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextMethod (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -83,4 +83,5 @@ For a C++ example, see the [IWbemClassObject::NextMethod](/windows/desktop/api/w
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

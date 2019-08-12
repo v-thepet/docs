@@ -23,7 +23,7 @@ Adds imports to the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddImport(  
     mdAssembly      AssemblyID,  
     mdToken         ImportToken,  
@@ -32,7 +32,7 @@ HRESULT AddImport(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to be augmented.  
   
@@ -52,6 +52,7 @@ HRESULT AddImport(
  Requires alink.h  
   
 ## See also
+
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

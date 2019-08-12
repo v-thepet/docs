@@ -72,7 +72,7 @@ AddHandler button1.Click, Async Sub(sender, e)
   
 ' The following async method returns a Task(Of T).  
 ' A typical call awaits the Byte array result:  
-'      Dim result As Byte() = Await GetURLContents("http://msdn.com")  
+'      Dim result As Byte() = Await GetURLContents("https://msdn.com")  
 Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())  
   
     ' The downloaded resource ends up in the variable named content.  
@@ -98,6 +98,7 @@ End Function
 ```  
   
 ## See also
+
 - <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
 - [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)
 - [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)

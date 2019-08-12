@@ -22,7 +22,7 @@ Returns information about the specified type library by examining its [TLIBATTR]
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLibInfo(  
     [in]   LPWSTR     szFile,  
     [out]  GUID      *pTypeLibID,  
@@ -33,7 +33,7 @@ HRESULT GetTypeLibInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file name of the type library.  
   
@@ -67,5 +67,6 @@ HRESULT GetTypeLibInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
 - [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

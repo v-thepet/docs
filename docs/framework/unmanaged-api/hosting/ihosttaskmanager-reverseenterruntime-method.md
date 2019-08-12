@@ -23,7 +23,7 @@ Notifies the host that a call is being made into the common language runtime (CL
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReverseEnterRuntime ();  
 ```  
   
@@ -55,6 +55,7 @@ HRESULT ReverseEnterRuntime ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

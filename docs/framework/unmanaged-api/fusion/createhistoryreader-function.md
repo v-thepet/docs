@@ -22,14 +22,14 @@ Creates a history reader for the specified file.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateHistoryReader (  
     [in]  LPCWSTR        wzFilePath,  
     [out] IHistoryReader **ppHistoryReader  
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFilePath`  
  [in] The file path.  
   
@@ -52,4 +52,5 @@ HRESULT CreateHistoryReader (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

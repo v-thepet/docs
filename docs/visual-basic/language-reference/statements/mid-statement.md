@@ -61,9 +61,10 @@ Mid( _
   
  **Module:** `Strings`  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Strings.Mid%2A>
 - [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)
 - [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

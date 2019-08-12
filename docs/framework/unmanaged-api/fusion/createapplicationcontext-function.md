@@ -22,14 +22,14 @@ This function supports the .NET Framework infrastructure and is not intended to 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateApplicationContext (  
     [in]  IAssemblyName  *pName,  
     [out] LPPAPPLICATIONCONTEXT  *ppCtx  
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [in] A pointer to a friendly name.  
   
@@ -46,6 +46,7 @@ HRESULT CreateApplicationContext (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
 - [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

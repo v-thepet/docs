@@ -24,7 +24,7 @@ Returns a textual rendering of the object in the Managed Object Format (MOF) syn
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectText (
    [in] int                vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -79,4 +79,5 @@ The following algorithm is used to reconstruct the text of the parameters of a m
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

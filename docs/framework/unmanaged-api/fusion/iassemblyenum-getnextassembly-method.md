@@ -23,7 +23,7 @@ Gets a pointer to the next [IAssemblyName](../../../../docs/framework/unmanaged-
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextAssembly (  
     [in]  LPVOID          pvReserved,  
     [out] IAssemblyName   **ppName,  
@@ -31,7 +31,7 @@ HRESULT GetNextAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvReserved`  
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
@@ -49,5 +49,6 @@ HRESULT GetNextAssembly (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
 - [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)

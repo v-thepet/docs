@@ -24,7 +24,7 @@ Gets the path to the cached assembly, using the specified flags.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCachePath (  
     [in]      ASM_CACHE_FLAGS  dwCacheFlags,  
     [in]      LPWSTR           pwzCachePath,  
@@ -32,7 +32,7 @@ HRESULT GetCachePath (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwCacheFlags`  
  [in] An [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) value that indicates the source of the cached assembly.  
   
@@ -50,5 +50,6 @@ HRESULT GetCachePath (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ASM_CACHE_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md)
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

@@ -24,7 +24,7 @@ Gets a hash of the specified assembly file, using the specified hash algorithm.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromAssemblyFile (  
     [in]  LPCSTR   szFilePath,  
     [in, out] unsigned int   *piHashAlg,  
@@ -34,7 +34,7 @@ HRESULT GetHashFromAssemblyFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilePath`  
  [in] The path to the file to be hashed.  
   
@@ -60,6 +60,7 @@ HRESULT GetHashFromAssemblyFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)
 - [GetHashFromAssemblyFileW Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

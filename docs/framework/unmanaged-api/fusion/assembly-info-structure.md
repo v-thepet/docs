@@ -22,7 +22,7 @@ Contains information about an assembly that is registered in the global assembly
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _ASSEMBLY_INFO {  
     ULONG           cbAssemblyInfo;  
     DWORD           dwAssemblyFlags;  
@@ -50,5 +50,6 @@ typedef struct _ASSEMBLY_INFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
 - [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

@@ -10,13 +10,13 @@ Returns the metadata from a merged assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageMetadata(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppMemoryBuffer`  
  [out] A pointer to the address of an [ICorDebugMemoryBuffer](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md) object that contains information about the size and address of the merged assembly's metadata.  
   
@@ -35,5 +35,6 @@ HRESULT GetAssemblyImageMetadata(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

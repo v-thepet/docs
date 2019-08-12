@@ -23,14 +23,14 @@ Binds the specified handle to an I/O completion port that has been created by an
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Bind (  
     [in] HANDLE hPort,  
     [in] HANDLE hHandle  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hPort`  
  [in] The I/O completion port to which to bind `hHandle`. If the value of `hPort` is null, `hHandle` is bound to the default I/O completion port.  
   
@@ -64,4 +64,5 @@ HRESULT Bind (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)

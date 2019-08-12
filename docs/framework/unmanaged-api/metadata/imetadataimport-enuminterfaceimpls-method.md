@@ -23,7 +23,7 @@ Enumerates all interfaces implemented by the specified `TypeDef`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumInterfaceImpls (  
    [in, out]  HCORENUM       *phEnum,   
    [in]   mdTypeDef          td,  
@@ -70,5 +70,6 @@ The enumeration returns a collection of `mdInterfaceImpl` tokens for each interf
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

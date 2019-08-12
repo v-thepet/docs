@@ -15,7 +15,7 @@ Specifies the summary of the member.
 <summary>description</summary>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A summary of the object.  
   
@@ -32,4 +32,5 @@ Specifies the summary of the member.
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

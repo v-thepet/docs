@@ -10,13 +10,13 @@ Gets the size in bytes of the loaded module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcBytes  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcBytes`  
  [out] A pointer to the number of bytes in the loaded module.  
   
@@ -35,5 +35,6 @@ HRESULT GetSize(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugLoadedModule Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

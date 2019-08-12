@@ -10,13 +10,13 @@ Gets the base address of the loaded module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
    [out] CORDB_ADDRESS *pAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] A pointer to the base address of the loaded module.  
   
@@ -35,5 +35,6 @@ HRESULT GetBaseAddress(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugLoadedModule Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

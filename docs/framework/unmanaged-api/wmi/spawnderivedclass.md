@@ -24,7 +24,7 @@ Creates a newly derived class object from a specified object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SpawnDerivedClass (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
@@ -75,4 +75,5 @@ The new object returned in `ppNewClass` automatically becomes a subclass of the 
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

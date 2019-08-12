@@ -24,7 +24,7 @@ Returns a new object that is a complete clone of the current object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
@@ -68,4 +68,5 @@ The cloned object is a COM object that has a reference count of 1.
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

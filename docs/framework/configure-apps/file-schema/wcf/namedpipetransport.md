@@ -28,7 +28,7 @@ Defines a transport that causes a channel to transfer messages using named pipes
                     transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
   <connectionPoolSettings groupName="String"
                           idleTimeout="TimeSpan"
-                          maxOutboundConnectionsPerEndpopint="Integer" />
+                          maxOutboundConnectionsPerEndpoint="Integer" />
 </namedPipeTransport>
 ```  
   
@@ -67,6 +67,7 @@ This transport uses URIs of the form "net.pipe://hostname/path". Other URI compo
 The `namedPipeTransport` element is the starting point for creating a custom binding that implements the named pipes transport protocol. This transport is used for on-machine Windows Communication Foundation (WCF)-to-WCF communication.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.NamedPipeTransportElement>
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

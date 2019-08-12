@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "user interface, see UI"
   - "accessibility, UI automation"
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Overview
 > [!NOTE]
@@ -24,7 +22,7 @@ ms.author: "mhopkins"
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] provides full functionality in [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxp](../../../includes/tlasharptla-winxp-md.md)], and [!INCLUDE[TLA2#tla_winnetsvrfam](../../../includes/tla2sharptla-winnetsvrfam-md.md)].  
   
- UI Automation providers offer some support for [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] client applications, through a built-in bridging service.  
+ UI Automation providers offer some support for Microsoft Active Accessibility client applications, through a built-in bridging service.  
   
 <a name="Providers_and_Clients"></a>   
 ## Providers and Clients  
@@ -32,7 +30,7 @@ ms.author: "mhopkins"
   
 |Component|Description|  
 |---------------|-----------------|  
-|Provider [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] (UIAutomationProvider.dll and UIAutomationTypes.dll)|A set of interface definitions that are implemented by UI Automation providers, objects that provide information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements and respond to programmatic input.|  
+|Provider API (UIAutomationProvider.dll and UIAutomationTypes.dll)|A set of interface definitions that are implemented by UI Automation providers, objects that provide information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements and respond to programmatic input.|  
 |Client API (UIAutomationClient.dll and UIAutomationTypes.dll)|A set of types for managed code that enables UI Automation client applications to obtain information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and to send input to controls.|  
 |UiAutomationCore.dll|The underlying code (sometimes called the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core) that handles communication between providers and clients.|  
 |UIAutomationClientsideProviders.dll|A set of UI Automation providers for standard legacy controls. ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls have native support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].) This support is automatically available to client applications.|  
@@ -71,6 +69,7 @@ ms.author: "mhopkins"
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] also provides information to client applications through events. Unlike [!INCLUDE[TLA2#tla_winevents](../../../includes/tla2sharptla-winevents-md.md)], [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events are not based on a broadcast mechanism. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] clients register for specific event notifications and can request that specific [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control pattern information be passed into their event handlers. In addition, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event contains a reference to the element that raised it. Providers can improve performance by raising events selectively, depending on whether any clients are listening.  
   
 ## See also
+
 - [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)

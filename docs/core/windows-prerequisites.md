@@ -1,7 +1,8 @@
 ---
 title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
-ms.date: 12/14/2018
+ms.custom: "updateeachvsrelease"
+ms.date: 04/08/2019
 ---
 
 # Prerequisites for .NET Core on Windows
@@ -13,18 +14,6 @@ This article shows the supported OS versions in order to run .NET Core applicati
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 Also, if you're developing on Windows using Visual Studio 2017, the [Prerequisites with Visual Studio 2017](#prerequisites-with-visual-studio-2017) section goes in more detail about minimum versions supported for .NET Core development.
-
-## .NET Core supported Windows versions
-
-.NET Core is supported on the following versions of:
-
-* Windows 7 SP1
-* Windows 8.1
-* Windows 10 Anniversary Update (version 1607) or later versions
-* Windows Server 2008 R2 SP1 (Full Server or Server Core)
-* Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 (Full Server or Server Core)
-* Windows Server 2016 or later versions (Full Server, Server Core, or Nano Server)
 
 ## .NET Core supported operating systems
 
@@ -51,15 +40,15 @@ For download links and more information, see [.NET downloads](https://dotnet.mic
 > [!NOTE]
 > **For Windows 8.1 and earlier versions, or Windows Server 2012 R2 and earlier versions:**
 >
-> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows), which can be installed through Windows Update. If you don't have this update installed, you'll see an error like the following when you launch a .NET Core application: `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
+> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows), which can be installed through Windows Update. If you don't have this update installed, you'll see an error like the following when you launch a .NET Core application: `The program can't start because api-ms-win-crt-runtime-l1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
 >
 > **For Windows 7 or Windows Server 2008 R2:**
 >
-> In addition to KB2999226, make sure you also have [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed. If you don't have this update installed, you'll see an error similar to the following when you launch a .NET Core application: `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`.
+> In addition to KB2999226, make sure you also have [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed. If you don't have this update installed, you'll see an error similar to the following when you launch a .NET Core application: `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`.
 
-## Prerequisites for .NET Core 3.0 Preview 1
+## Prerequisites for .NET Core 3.0 Preview 3
 
-.NET Core 3.0 Preview 1 has the same prerequisites as other versions of .NET Core. However, if you want to use Visual Studio to create .NET Core 3.0 projects, you must use the [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/). Visual Studio 2019 Preview can be installed side-by-side with other versions of Visual Studio without conflict.
+.NET Core 3.0 Preview 3 has the same prerequisites as other versions of .NET Core. However, if you want to use Visual Studio to create .NET Core 3.0 projects, you must use the [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Visual Studio 2019 can be installed side-by-side with other versions of Visual Studio without conflict.
 
 ## Prerequisites with Visual Studio 2017
     
@@ -117,7 +106,7 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 >
 > * On the **Help** menu, choose **About Microsoft Visual Studio**.
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.
->   * For .NET Core 3.0 Preview 1 apps, Visual Studio 2019 Preview 1 or higher.
+>   * For .NET Core 3.0 Preview 3 apps, Visual Studio 2019 version 16.0 or higher.
 >   * For .NET Core 2.2 apps, Visual Studio 2017 version 15.9 or higher.
 >   * For .NET Core 2.1 apps, Visual Studio 2017 version 15.7 or higher.
 >   * For .NET Core 1.x apps, Visual Studio 2017 version 15.0 or higher.

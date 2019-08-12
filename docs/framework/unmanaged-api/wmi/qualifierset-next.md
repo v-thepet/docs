@@ -24,7 +24,7 @@ Retrieves the next qualifier in an enumeration that started with a call to the [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Next (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 
@@ -83,4 +83,5 @@ The order of the qualifiers returned during the enumeration is undefined.
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

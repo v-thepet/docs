@@ -22,7 +22,7 @@ Assigns the name of the assembly to be built. Not for use when producing unbound
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyFile(  
     LPCWSTR pszFilename,  
     IMetaDataEmit* pEmitter,  
@@ -31,7 +31,7 @@ HRESULT SetAssemblyFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Fully qualified name of the manifest file.  
   
@@ -51,6 +51,7 @@ HRESULT SetAssemblyFile(
  Requires alink.h.  
   
 ## See also
+
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

@@ -23,7 +23,7 @@ Returns the fully qualified domain name or IPv4 address of the remote debugging 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostName (  
     [in] ULONG32      cchHostName,  
     [out] ULONG32*    pcchHostName,  
@@ -31,7 +31,7 @@ HRESULT GetHostName (
             WCHAR szHostName[]  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchHostName`  
  [in] The size, in characters, of the `szHostName` buffer. If this parameter is 0 (zero), `szHostName` must be null.  
   
@@ -61,5 +61,6 @@ HRESULT GetHostName (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

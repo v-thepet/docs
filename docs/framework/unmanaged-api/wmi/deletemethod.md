@@ -24,7 +24,7 @@ Deletes the specified method from a CIM class definition.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Delete (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 
@@ -67,4 +67,5 @@ Method deletion is not supported for [IWbemClassObject](/windows/desktop/api/wbe
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

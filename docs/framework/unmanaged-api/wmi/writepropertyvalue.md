@@ -24,7 +24,7 @@ Writes a specified number of bytes to a property identified by a property handle
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WritePropertyValue (
    [in] int                  vFunc, 
    [in] IWbemObjectAccess*   ptr, 
@@ -77,4 +77,5 @@ For nonstring property values, `lNumBytes` must be the correct data size of the 
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

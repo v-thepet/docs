@@ -26,13 +26,13 @@ Updates the existing symbol store with a delta symbol store. This method is used
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore (  
     [in] const WCHAR *filename,  
     [in] IStream *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  [in] The name of the file that contains the symbol store.  
   
@@ -46,4 +46,5 @@ HRESULT UpdateSymbolStore (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

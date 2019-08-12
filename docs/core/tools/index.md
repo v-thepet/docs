@@ -93,7 +93,7 @@ The CLI adopts an extensibility model that allows you to specify additional tool
 
 ## Command structure
 
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command (or "verb")](#command-verb), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
 
 # [.NET Core 2.x](#tab/netcore2x)
 
@@ -116,15 +116,21 @@ dotnet /build_output/my_app.dll
 
 ### Driver
 
-The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
+The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. 
 
-To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`.
+To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`. If you want to use a specific version of the .NET Core Runtime, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference).
 
-When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. First, the driver determines the version of the SDK to use. If the version isn't specified in the command options, the driver uses the latest version available. To specify a version other than the latest installed version, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference). Once the SDK version is determined, the driver executes the command.
+When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
 
-### Command ("verb")
+```bash
+> dotnet build
+```
 
-The command (or "verb") is simply a command that performs an action. For example, `dotnet build` builds your code. `dotnet publish` publishes your code. The commands are implemented as a console application using a `dotnet {verb}` convention.
+First, the driver determines the version of the SDK to use. If there is no ['global.json'](global-json.md), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.
+
+### Command
+
+The command performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. The commands are implemented as a console application using a `dotnet {command}` convention.
 
 ### Arguments
 

@@ -23,7 +23,7 @@ Notifies the host that a call to an unmanaged method, such as a platform invoke 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnterRuntime ();  
 ```  
   
@@ -55,6 +55,7 @@ HRESULT EnterRuntime ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)
 - [How to: Call Native DLLs from Managed Code Using PInvoke](/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke)
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)

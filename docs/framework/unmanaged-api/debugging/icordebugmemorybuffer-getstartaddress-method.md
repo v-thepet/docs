@@ -10,13 +10,13 @@ Gets the starting address of the memory buffer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartAddress(  
    [out] LPCVOID *address  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [out] A pointer to the starting address of the memory buffer.  
   
@@ -35,5 +35,6 @@ HRESULT GetStartAddress(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

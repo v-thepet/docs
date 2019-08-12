@@ -10,13 +10,13 @@ Returns the container assembly of this `ICorDebugAssembly3` object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContainerAssembly(  
     ICorDebugAssembly **ppAssembly  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssembly`  
  A pointer to the address of an ICorDebugAssembly object that represents the container assembly, or **null** if the method call fails.  
   
@@ -39,5 +39,6 @@ HRESULT GetContainerAssembly(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

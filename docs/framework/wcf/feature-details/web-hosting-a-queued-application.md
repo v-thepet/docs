@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c7a539fa-e442-4c08-a7f1-17b7f5a03e88
 ---
 # Web Hosting a Queued Application
-The Windows Process Activation Service (WAS) manages the activation and lifetime of the worker processes that contain applications that host Windows Communication Foundation (WCF) services. The WAS process model generalizes the [!INCLUDE[iis601](../../../../includes/iis601-md.md)] process model for the HTTP server by removing the dependency on HTTP. This allows WCF services to use both HTTP and non-HTTP protocols, such as net.msmq and msmq.formatname, in a hosting environment that supports message-based activation and offers the ability to host a large number of applications on a given computer.  
+The Windows Process Activation Service (WAS) manages the activation and lifetime of the worker processes that contain applications that host Windows Communication Foundation (WCF) services. The WAS process model generalizes the IIS 6.0 process model for the HTTP server by removing the dependency on HTTP. This allows WCF services to use both HTTP and non-HTTP protocols, such as net.msmq and msmq.formatname, in a hosting environment that supports message-based activation and offers the ability to host a large number of applications on a given computer.  
   
  WAS includes a Message Queuing (MSMQ) activation service that activates a queued application when one or more messages are placed in one of the queues used by the application. The MSMQ activation service is an NT service that is automatically started by default.  
   
@@ -36,5 +36,6 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
  A WAS-hosted application cannot be activated based on messages in a system queue, such as the system-wide dead-letter queue, or sub-queues, such as poison sub-queues. This is a limitation for this version of the product.  
   
 ## See also
+
 - [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
 - [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)

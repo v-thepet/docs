@@ -13,7 +13,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  [!code-csharp[csProgGuideArrays#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#4)]  
   
- This array contains the elements from `array[0]` to `array[4]`. The [new](../../../csharp/language-reference/keywords/new.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
+ This array contains the elements from `array[0]` to `array[4]`. The [new](../../../csharp/language-reference/operators/new-operator.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
   
  An array that stores string elements can be declared in the same way. For example:  
   
@@ -26,8 +26,10 @@ You can declare a single-dimensional array of five integers as shown in the foll
  [!code-csharp[csProgGuideArrays#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#6)]  
   
  A string array can be initialized in the same way. The following is a declaration of a string array where each array element is initialized by a name of a day:  
-  
- [!code-csharp[csProgGuideArrays#7](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_4.cs)]  
+ 
+ ```csharp
+ string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+ ```
   
  When you initialize an array upon declaration, you can use the following shortcuts:  
   
