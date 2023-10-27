@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 05/04/2021
+ms.date: 10/27/2023
 ---
 
 # Cross-platform targeting
@@ -43,7 +43,7 @@ Targeting .NET or .NET Standard, and successfully compiling your project, doesn'
 
 > All platforms supporting .NET Standard 2.0 will use the `netstandard2.0` target and benefit from having a smaller package graph while older platforms will still work and fall back to using the `netstandard1.x` target.
 
-❌ DO NOT include a .NET Standard target if the library relies on a platform-specific app model.
+❌ DON'T include a .NET Standard target if the library relies on a platform-specific app model.
 
 > For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs will not be available in .NET Standard.
 
@@ -121,15 +121,17 @@ public static class GpsLocation
 
 ✔️ CONSIDER using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
 
+❌ AVOID changing the assembly name or using different assembly names for each TFM your library compiles. Due to dependencies between libraries, multi-targeting with different assembly names per TFM can break package comsumers. An assembly should have the same name across all TFMs.
+
 ## Older targets
 
 .NET supports targeting versions of .NET Framework that are long out of support as well as platforms that are no longer commonly used. While there's value in making your library work on as many targets as possible, having to work around missing APIs can add significant overhead. We believe certain frameworks are no longer worth targeting, considering their reach and limitations.
 
-❌ DO NOT include a Portable Class Library (PCL) target. For example, `portable-net45+win8+wpa81+wp8`.
+❌ DON'T include a Portable Class Library (PCL) target. For example, `portable-net45+win8+wpa81+wp8`.
 
 > .NET Standard is the modern way to support cross-platform .NET libraries and replaces PCLs.
 
-❌ DO NOT include targets for .NET platforms that are no longer supported. For example, `SL4`, `WP`.
+❌ DON'T include targets for .NET platforms that are no longer supported. For example, `SL4`, `WP`.
 
 >[!div class="step-by-step"]
 >[Previous](get-started.md)
